@@ -1,0 +1,1 @@
+SELECT institution.Name AS Instituition Name, course.Name AS Course Name, student.StudentID AS Number of Students FROM institution LEFT JOIN course ON course.Institution = institution.InstitutionID LEFT JOIN student ON student.Course = course.CourseID ORDER BY course.Name DESC, institution.Name DESC
